@@ -22,6 +22,11 @@ function isPalindrome(str) {
   }
 }
 
+function addUpTo(n) {
+  if(n === 1) return n;
+  return addUpTo(n) + n;
+}
+
 // function printString(str) {
 //   console.log(str[0]);
 
