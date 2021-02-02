@@ -16,7 +16,7 @@ function isPalindrome(str) {
   if(str.length < 2) return true;
   if(str[0] === str[str.length - 1]) {
     const substr = str.substr(1, str.length -1);
-    isPalindrome(substr);
+    return isPalindrome(substr);
   } else {
     return false;
   }
