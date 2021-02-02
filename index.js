@@ -12,6 +12,16 @@ function reverseString(str) {
   return reverseString(substr) + str[0];
 }
 
+function isPalindrome(str) {
+  if(str.length === 1) return true;
+  if(str[0] === str[str.length - 1]) {
+    const substr = str.substr(1, str.length -1);
+    isPalindrome(substr);
+  } else {
+    return false;
+  }
+}
+
 // function printString(str) {
 //   console.log(str[0]);
 
