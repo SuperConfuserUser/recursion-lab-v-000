@@ -6,6 +6,13 @@ function printString(str) {
   printString(substr);
 }
 
+function reverseString(str) {
+  console.log(str[str.length-1]);
+  if(str.length === 1) return;
+  const substr = str.substr(0,str.length -2);
+  reverseString(substr);
+}
+
 // function printString(str) {
 //   console.log(str[0]);
 
