@@ -7,7 +7,7 @@ function printString(str) {
 }
 
 function reverseString(str) {
-  if(str.length === 1) return;
+  if(str.length === 1) return str;
   const substr = str.substr(1, str.length);
   return str[0] + reverseString(substr);
 }
